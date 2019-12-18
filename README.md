@@ -14,9 +14,9 @@ import Icon from 'react-native-ico-christmas';
 render() {
     return (
         <>
-          <Icon name="004-list-1" />
-          <Icon name="005-list" height="40" width="40" />
-          <Icon name="006-zambomba" color="red" />
+          <Icon name="list-1" />
+          <Icon name="list" height="40" width="40" />
+          <Icon name="zambomba" color="red" />
         </>
     );
 }
@@ -61,7 +61,7 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of file | "004-list-1"
+name | no |  | name of file | "list-1"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
