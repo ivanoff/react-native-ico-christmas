@@ -1,5 +1,6 @@
 declare module 'react-native-ico-christmas' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = 'chocolate-1' |
       'christmas-card-1' |
@@ -133,7 +134,7 @@ declare module 'react-native-ico-christmas' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
