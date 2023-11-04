@@ -103,7 +103,37 @@ declare module 'react-native-ico-christmas' {
       'mrs-claus' |
       'santa-claus';
 
+    type iconColors = '#35611A' |
+      '#4B7A2F' |
+      '#619243' |
+      '#6E1414' |
+      '#7D2E16' |
+      '#88AD72' |
+      '#924630' |
+      '#992A2A' |
+      '#A86B5A' |
+      '#BE9083' |
+      '#CCC9C0' |
+      '#DF3333' |
+      '#E55C5C' |
+      '#E8682C' |
+      '#E8A44D' |
+      '#E8E5DA' |
+      '#EC8585' |
+      '#EF7F4A' |
+      '#F7B89E' |
+      '#F7E4E4' |
+      '#F7F5F2' |
+      '#FFB3B3' |
+      '#FFCB61' |
+      '#FFCFBB' |
+      '#FFDB92' |
+      '#FFEBC2' |
+      '#FFFFFF';
+
     type backgroundType = 'circle' | 'rect' | 'button';
+
+    type colorsType = Record<iconColors, string>;
 
     type positionType = 'top' | 'bottom' | 'right' | 'left' |
       'top_right' | 'top_left' | 'bottom_right' | 'bottom_left';
@@ -120,6 +150,7 @@ declare module 'react-native-ico-christmas' {
       fontSize?: string;
       position?: positionType;
       color?: string;
+      colors: colorsType;
       backgroundColor?: string;
       radius?: number;
     };
@@ -129,6 +160,7 @@ declare module 'react-native-ico-christmas' {
       width?: number;
       height?: number;
       color?: string;
+      colors: colorsType;
       stroke?: number;
       background?: backgroundType | backgroundTypeObj;
       badge?: number | string | badgeTypeObj;
